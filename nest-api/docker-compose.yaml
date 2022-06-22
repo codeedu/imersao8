@@ -11,6 +11,8 @@ services:
       - .:/home/node/app
     depends_on:
       - db
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
   
   db:
     image: mongo:4.4.4
