@@ -18,12 +18,12 @@ import { RoutesGateway } from './routes.gateway';
             client: {
               clientId: process.env.KAFKA_CLIENT_ID,
               brokers: [process.env.KAFKA_BROKER],
-              ssl: true,
+              /*ssl: true,
               sasl: {
                 mechanism: 'plain', // scram-sha-256 or scram-sha-512
                 username: process.env.KAFKA_SASL_USERNAME,
                 password: process.env.KAFKA_SASL_PASSWORD,
-              },
+              },*/
             },
             consumer: {
               groupId:
